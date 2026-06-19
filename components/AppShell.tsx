@@ -9,6 +9,7 @@ import { Loader } from "@/components/Loader";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { ClientCache } from "@/components/ClientCache";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -89,27 +90,8 @@ export function AppShell({ children }: { children: ReactNode }) {
     // Use capture phase so we intercept before React's synthetic event system
     document.addEventListener("click", onClick, { capture: true });
     
-    // Prefetch all internal links to cache pages for smooth transitions
-    const prefetchLinks = () => {
-      const links = document.querySelectorAll('a[href]');
-      links.forEach((link) => {
-        try {
-          const url = new URL((link as HTMLAnchorElement).href);
-          if (url.origin === window.location.origin) {
-            router.prefetch(url.pathname + url.search);
-          }
-        } catch (e) {
-          // ignore invalid urls
-        }
-      });
-    };
-    
-    // Run prefetch after a short delay to not block initial render
-    const prefetchTimer = setTimeout(prefetchLinks, 1000);
-
     return () => {
       document.removeEventListener("click", onClick, { capture: true });
-      clearTimeout(prefetchTimer);
     };
   }, [loading, router]);
 
@@ -117,6 +99,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     <>
       <Loader onDone={() => setLoading(false)} />
       <CustomCursor />
+      <ClientCache enabled={!loading} />
       <SmoothScroll disabled={loading} />
       <div className="route-transition" aria-hidden="true"></div>
       <Navigation />

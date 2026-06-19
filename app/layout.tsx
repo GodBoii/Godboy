@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   title: "Godboy Digital Studio | AI Systems, Motion & Frontend",
   description:
     "A motion-rich editorial portfolio for Prajwal, building AI systems, agentic infrastructure, web experiences, and creative frontend work.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
