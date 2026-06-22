@@ -37,10 +37,11 @@ export default function Home() {
       <section className="intro-grid wrap">
         <h2>Work</h2>
         <p>
-          I design and build AI systems, agentic infrastructure, protocols, and motion-rich
-          frontend surfaces from research and architecture through polished shipped interfaces.
+          I am Prajwal Ghadge, building as GodBoii. My public work is mostly AI-OS/Aetheria,
+          MTPX, model-tool protocols, agent backends, Python utilities, and product websites
+          that turn those systems into usable surfaces.
         </p>
-        <span>©2026</span>
+        <span>(c)2026</span>
       </section>
 
       <section className="home-work wrap">
@@ -62,9 +63,9 @@ export default function Home() {
         <div>
           <h2>About Me</h2>
           <p>
-            Godboy is my creative engineering lab: part AI systems studio, part protocol workshop,
-            part motion-obsessed frontend practice. The goal is simple: build tools that feel
-            powerful, strange, and actually usable.
+            Godboy is my public build archive and personal engineering identity. The work starts
+            with experiments in agents, LLM tools, model architecture, and automation, then moves
+            into websites, dashboards, CLIs, and docs that show how the system actually works.
           </p>
         </div>
         <Media src="/media/Godboy.png" alt="Prajwal portrait composition" />
@@ -81,10 +82,11 @@ export default function Home() {
       </section>
 
       <section className="playground wrap">
-        <h2>Playground G7™</h2>
+        <h2>Playground G7</h2>
         <p>
-          Experiments in agents, protocols, interfaces, and strange little systems. The point is
-          to keep inventing in public until the rough thing becomes the obvious thing.
+          Current experiments are centered on AI-OS, MTPX, Aetheria, PCA, Polymarket dashboards,
+          and trading automation, with older Python learning projects kept visible as part of the
+          path.
         </p>
         <ul className="playground-strip">
           {playgroundItems.map((item) => (
