@@ -14,6 +14,8 @@ export type Project = {
   accent: string;
   media: string;
   video?: string;
+  repoUrl?: string;
+  liveUrl?: string;
 };
 
 export type CaseModule =
