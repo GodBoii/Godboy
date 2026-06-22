@@ -7,11 +7,11 @@ export default function StudioPage() {
   return (
     <main>
       <section className="studio-hero wrap">
-        <TextReveal as="h1" className="mega">{"Studio\n2026©"}</TextReveal>
+        <TextReveal as="h1" className="mega">{"Prajwal\nGodBoii"}</TextReveal>
         <p>
-          I am Prajwal, building under Godboy: AI systems, protocols, agent tooling, and expressive
-          frontend surfaces. The work lives between research and interface, where abstract systems
-          become something a person can actually use.
+          I am Prajwal Ghadge, building in public as GodBoii. GitHub, Aetheria, and MTPX are the
+          center of the work: AI operating-system experiments, model-tool runtimes, agent backends,
+          Python research code, and the web surfaces that make those systems understandable.
         </p>
       </section>
       <StudioGallery />
@@ -26,10 +26,11 @@ export default function StudioPage() {
       </section>
       <section className="editorial-pair wrap">
         <div>
-          <h2>Fun is the key to happiness</h2>
+          <h2>Research into runnable things</h2>
           <p>
-            The best technical work still needs play. Protocols, agents, and runtimes become more
-            useful when the interface has rhythm, clarity, and a little nerve.
+            The projects move between two modes: low-level experiments like PCA, MTPX, voice
+            classifiers, and LLM scripts, and product surfaces like Aetheria AI, AI-OS websites,
+            Polymarket dashboards, and Pawsitive Strides.
           </p>
         </div>
         <Media src="/media/prajwal.png" alt="Prajwal portrait" />
@@ -37,16 +38,17 @@ export default function StudioPage() {
       </section>
       <section className="manifest wrap">
         <p>
-          Build the thing with a little danger in it. Make the code dependable. Make the surface
-          alive. Let research, tooling, and design sit at the same table.
+          The throughline is practical autonomy: tools that can browse, call functions, execute
+          code, manage context, talk to services, and still be visible enough for a human to steer.
         </p>
         <Media src="/media/image copy 8.png" alt="Working hard or hardly working" />
       </section>
       <section className="people wrap">
-        <h2>People over profit</h2>
+        <h2>Public, specific, verifiable</h2>
         <p>
-          I value transparency, care, learning, and craft. The best digital work is not a pile of
-          effects; it is trust made visible through every detail.
+          The project archive includes polished systems and early learning repos. They are shown
+          together on purpose: the site explains what each repo actually is, without inflating
+          small utilities into fake case studies.
         </p>
       </section>
       <section className="stats-row wrap">
