@@ -50,7 +50,8 @@ export const projects: Project[] = [
     tags: ["Python", "CLI", "SDK", "MCP", "Agents"],
     accent: "#1a1a1a",
     media: media.mtpx,
-    repoUrl: "https://github.com/GodBoii/Model-Tool-protocol-",
+    repoUrl: "https://github.com/GodBoii/MTP-Model-Tools-Protocol-",
+    liveUrl: "https://mtp-model-tools-protocol.vercel.app/docs/agent-api",
   },
   {
     slug: "mtpx-documentation-frontend",
@@ -69,7 +70,7 @@ export const projects: Project[] = [
     accent: "#ff3928",
     media: media.mtpx,
     repoUrl: "https://github.com/GodBoii/MTP-Model-Tools-Protocol-",
-    liveUrl: "https://mtp-model-tools-protocol.vercel.app",
+    liveUrl: "https://mtp-model-tools-protocol.vercel.app/docs/agent-api",
   },
   {
     slug: "pca",
